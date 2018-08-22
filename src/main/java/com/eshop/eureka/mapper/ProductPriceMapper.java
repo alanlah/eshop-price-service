@@ -26,4 +26,8 @@ public interface ProductPriceMapper {
 	@Results({ @Result(column = "product_id", property = "productId") })
 	public ProductPrice findById(Long id);
 
+	@Select("SELECT * FROM product_price WHERE product_id=#{productId}")
+	@Results({ @Result(column = "product_id", property = "productId") })
+	public ProductPrice findByProductId(Long productId);
+
 }
