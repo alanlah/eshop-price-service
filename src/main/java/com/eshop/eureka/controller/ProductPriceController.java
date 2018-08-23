@@ -63,9 +63,9 @@ public class ProductPriceController {
 	}
 	@RequestMapping("/findByProductId") 
 	@ResponseBody
-	public ProductPrice findByProductId(Long id){
+	public ProductPrice findByProductId(Long productId){
 		try {
-			return productPriceService.findByProductId(id);
+			return productPriceService.findByProductId(productId);
 		} catch (Exception e) {
 			e.printStackTrace(); 
 		}

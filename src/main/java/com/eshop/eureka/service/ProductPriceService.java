@@ -11,6 +11,6 @@ public void add(ProductPrice productPrice);
 	
 	public ProductPrice findById(Long id);
 
-	public ProductPrice findByProductId(Long id);
+	public ProductPrice findByProductId(Long productId);
 	
 }
